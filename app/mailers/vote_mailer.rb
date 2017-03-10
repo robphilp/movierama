@@ -5,7 +5,6 @@ class VoteMailer < ActionMailer::Base
     @current_user = current_user
     @movie_user = movie_user
     @type = type
-    @url  = 'http://example.com/login'
     mail(to: @movie_user.email, subject: 'A vote has been cast')
   end
 end
